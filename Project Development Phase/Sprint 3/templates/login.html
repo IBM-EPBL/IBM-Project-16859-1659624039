@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLASMA | LOGIN</title>
+        <!-- favicon -->
+        <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- font styles cdn --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Sono:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+        background-image:url('static/imgs/gif3.gif');
+        background-repeat:no-repeat;
+        background-size:1550px 700px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="logo mt-3 text-center">
+        <a class="main-logo-img mt-5" href="#"><img src="static/imgs/log2.jpg" alt="sheep-logo" height="50px" width="180px">
+            <!-- <a class="navbar-brand" href="index.html">JobPortal</a> -->
+          </a>
+
+    </div>
+    <!-- bootstrap navbar -->
+    <br>
+    <br>
+    <br>
+    <div align="center" id="div1" >
+        <h1 style="color:black;font-family: 'Lato', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Sono', sans-serif;"><i>PLASMA DONOR APPLICATION</i></h1>
+    </div>
+
+      <!-- navbar ends -->
+    <!-- Login form -->
+    <div class="login text-center mt-5">
+        <h2 style="color:black"><i>Login Form</i></h2>
+        <br>
+        <form action="{{url_for('login')}}" method="post">
+        <div class="msg"style="color:black;">{{ msg }}</div>
+            <label for="floatingInput" style="color:black;font-size:19px"><b>UserName    </b></label>
+            <input type="text" name="username" placeholder="Enter Your Username"  id="username" required></br></br>
+            <label for="floatingPassword"style="color:black;font-size:19px"><b>Password     </b></label>
+			<input type="password" name="password" placeholder="Enter Your Password" id="password" required></br></br>
+            </br>
+            </br>
+        <button type="submit" id="button" class="btn btn-success"style="font-size:19px"> Login </button>
+        </form>
+    </div>
+
+
+
+<br>
+<br>
+<br>
+    <div class="note mt-3 text-center"> <!--Register form -->
+
+        <p style="font-size:20px"><b> Don't have an account yet? Click here to    <a href="/register"style="color:orange">  <i> Register!!!! </i> </a> </b></p>
+    </div>
+<div>
+    {{msg}}
+</div>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "d4a0709e-7183-4522-89e5-390cbb8dada7", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "ba7ae4bb-9155-4eda-80b0-aacbf9588b7e", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>

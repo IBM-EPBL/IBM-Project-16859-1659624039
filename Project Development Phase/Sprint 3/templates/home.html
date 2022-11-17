@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLASMA | HOME</title>
+    <meta charset="UTF-8">
+        <!-- favicon -->
+        <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="static/style.css">
+        <!-- font styles cdn -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+</head>
+
+
+<body >
+        <!-- bootstrap navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="main-logo-img mt-3" href="#"><img src="/static/imgs/log2.jpg" alt="sheep-logo" height="80px" width="180px">
+                <!-- <a class="navbar-brand" href="index.html">JobPortal</a> -->
+              </a>
+
+              <div class="row donate-sponsor">
+                  <form action="/home" method="post">
+                      <h1 align="center">PLASMA DONOR APPLICATION </h1>
+                      <br>
+                 <a type="button" class="btn btn-dark mr-1" id="donate" href="{{url_for('userreg')}}">USER REGISTRATION</a>
+                <a type="button" class="btn btn-success mr-1" id="donate" href="{{url_for('login')}}">LOGIN</a>
+                <a type="button" class="btn btn-warning mr-1" id="sponsor" href="{{url_for('register')}}">REGISTER</a>
+                <a type="button" class="btn btn-primary mr-1" id="sponsor" href="{{url_for('contactus')}}">CONTACT US</a>
+                  </form>
+
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+
+        <!-- what we focus on -->
+
+        <section class="our-focus">
+            <div class="container">
+              <h2 class="text-center mt-3">About Us</h2>
+
+              <div class="row ml-3 mt-3">
+                <div class="col-lg-3 mr-5" id="focus-first">
+                  <div class="card" style="width: 19rem;">
+                    <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Mission</h5>
+                      <p class="card-text">Many people are familiar with the benefits and the process of blood donation; however,few people understand the importance of plasma donation. Plasma is the pale, yellow portion of the blood. Without plasma, our body would not be supplied with many of the proteins that are necessary to support blood clotting and our immune system responses.<b><i>YOUR LITTLE EFFORT CAN GIVE LIFE TO OTHERS</i></b>
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mr-5" id="focus-second">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/friendship day.JPG" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Vision</h5>
+                      <p class="card-text">Our main objective is to bridge the user gaps between  donors and receipient
+                          .Helps maintain blood pressure and volume. Supply critical proteins for blood clotting and immunity.
+                          Carries electrolytes such as sodium and potassium to our muscles.
+                          Helps to maintain a proper pH balance in the body, which supports cell function.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 ml-5" id="focus-third">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/health camp.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Objective</h5>
+                      <p class="card-text">The aim of developing Blood Donation Management System is to create an efficient system for the donors, where they can get ideas about ongoing Blood Donation Camp timing, and also can get ideas about the future blood donation Camps in order to plan a date for donating blood as per their convenience.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <!-- focus section ends -->
+
+        <!-- footer starts -->
+          <!-- Site footer -->
+          <footer class="site-footer">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h3>plasma donor features</h3>
+                  <p class="text-justify">Ensures hospitals have good supply or inventories of blood bags.
+List the availability of blood bags at any given time.
+Ability to manage the information of its blood donor.
+Alerts for blood requirement from registered donors.
+Auto-check if the person donated blood in the last 3 months.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                  <h4>Get in Touch</h4>
+                  <ul class="footer-links">
+                    <li><a href="mailto:test@gmail.com">plasmadonation@gmail.com</a></li>
+                    <li><a href="">+91 900000000</a></li>
+                  </ul>
+                </div>
+
+
+              </div>
+            <hr>
+
+
+              </div>
+            </div>
+      </footer>
+
+
+          </body>
+</html>
