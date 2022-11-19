@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLASMA |REQUEST</title>
+        <!-- favicon -->
+        <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- font styles cdn -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+        <style>
+        body { background-image:url('static/imgs/myimage.gif');
+         background-repeat:repeat;
+         background-size:cover;margin-left: 800px; }
+        </style>
+        
+    </head>
+<body class="main">
+    <!-- bootstrap navbar -->
+    <div class="logo mt-3 text-center">
+        <a class="main-logo-img mt-5" href="#"><img src="static/imgs/log2.jpg" alt="sheep-logo" height="50px" width="180px">
+            <!-- <a class="navbar-brand" href="index.html">JobPortal</a> -->
+          </a>
+    </div>
+      <!-- navbar ends -->
+    <!-- Login form -->
+    <div class="login text-center mt-5">
+        <h2> Request Form </h2>
+        <form action="/req" method="post">
+        <div class="msg"><b>{{ msg }}</b></div>
+            <!-- <input type="text" placeholder="fullname" id="fullname"> </br></br> -->
+            <i class="fa fa-user icon"></i>
+            <input type="text" name="name" placeholder="Enter Your name"  id="name" required></br></br>
+            <i class="fa fa-envelope icon"></i>
+			<input type="email" name="email" placeholder="Enter Your Email ID"  id="email" required></br></br>
+            <i class="fa fa-address-card icon"></i>
+			<input type="text" name="address" placeholder="Enter Your address" id="address" required></br></br>
+            <i class="fa fa-heart icon"></i>
+            <input type="text" name="age" placeholder="Enter Your age" id="age" required></br></br>
+            <i class="fa fa-location-arrow icon"></i>
+            <input type="text" name="city" placeholder="Enter Your  City" id="city" required></br></br>
+            <i class="fa fa-phone icon"></i>
+            <input type="text" name="phone" placeholder="Enter Your Phonenumber" id="phone" required>
+                  
+            <br>
+            <br>
+            <i class="fa fa-heartbeat icon"></i>
+                   Blood Group <select id="blood" name="blood">
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                </select>
+
+            </br>
+            </br>
+
+                
+        <button type="submit" id="button" class="btn btn-primary"> Request </button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
